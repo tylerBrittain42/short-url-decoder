@@ -12,4 +12,6 @@ func FinalDestination(url string) (string, error) {
 	return resp.Request.URL.String(), nil
 }
 
+func Trace(url string) ([]string, error) {
+	return []string{url}, nil
 }
