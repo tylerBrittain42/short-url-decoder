@@ -1,6 +1,9 @@
 package decoder
 
-import "testing"
+import (
+	"slices"
+	"testing"
+)
 
 func TestGetUrl(t *testing.T) {
 	type testCase struct {
