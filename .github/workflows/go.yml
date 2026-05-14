@@ -18,4 +18,10 @@ jobs:
         go-version: '1.23'
 
     - name: Build
-      run: go build -v cmd/cli/main.go
+      run: go build -v -o sud cmd/cli/main.go
+
+    - name: Upload binary
+      uses: actions/upload-artifact@v4
+      with:
+        name: short-url-decoder
+        path: sud
