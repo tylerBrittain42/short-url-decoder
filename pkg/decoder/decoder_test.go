@@ -42,7 +42,7 @@ func TestFinalDestination(t *testing.T) {
 	}
 }
 
-func GetTrace(t *testing.T) {
+func TestGetTrace(t *testing.T) {
 	type testCase struct {
 		description    string
 		input          string
